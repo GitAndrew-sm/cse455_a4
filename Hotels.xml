@@ -1,12 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
+<Hotels>
 
-<Hotels xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:noNamespaceSchemaLocation="Hotels.xsd">
-
-  <!-- 1) The Westin Tempe -->
   <Hotel Rating="4.2">
     <Name>The Westin Tempe</Name>
     <Phone>480-968-8885</Phone>
+    <Phone>800-937-8461</Phone>
     <Address NearestAirport="Sky Harbor">
       <Number>11</Number>
       <Street>E 7th St</Street>
@@ -16,7 +14,6 @@
     </Address>
   </Hotel>
 
-  <!-- 2) Residence Inn Tempe Downtown/University -->
   <Hotel Rating="4.4">
     <Name>Residence Inn Tempe Downtown/University</Name>
     <Phone>480-967-2300</Phone>
@@ -29,8 +26,7 @@
     </Address>
   </Hotel>
 
-  <!-- 3) Courtyard by Marriott Tempe Downtown -->
-  <Hotel>
+  <Hotel Rating="4.3">
     <Name>Courtyard by Marriott Tempe Downtown</Name>
     <Phone>480-966-2800</Phone>
     <Address NearestAirport="Sky Harbor">
@@ -42,7 +38,18 @@
     </Address>
   </Hotel>
 
-  <!-- 4) AC Hotel Phoenix Tempe/Downtown -->
+  <Hotel Rating="4.1">
+    <Name>Hyatt Place Tempe/Phoenix Airport</Name>
+    <Phone>480-804-9544</Phone>
+    <Address NearestAirport="Sky Harbor">
+      <Number>1413</Number>
+      <Street>W Rio Salado Pkwy</Street>
+      <City>Tempe</City>
+      <State>AZ</State>
+      <Zip>85281</Zip>
+    </Address>
+  </Hotel>
+
   <Hotel Rating="4.3">
     <Name>AC Hotel Phoenix Tempe/Downtown</Name>
     <Phone>480-642-6140</Phone>
@@ -55,47 +62,7 @@
     </Address>
   </Hotel>
 
-  <!-- 5) Graduate Tempe -->
-  <Hotel>
-    <Name>Graduate Tempe</Name>
-    <Phone>480-967-9431</Phone>
-    <Address NearestAirport="Sky Harbor">
-      <Number>225</Number>
-      <Street>E Apache Blvd</Street>
-      <City>Tempe</City>
-      <State>AZ</State>
-      <Zip>85281</Zip>
-    </Address>
-  </Hotel>
-
-  <!-- 6) Hyatt Place Tempe/Phoenix Airport -->
-  <Hotel>
-    <Name>Hyatt Place Tempe/Phoenix Airport</Name>
-    <Phone>480-804-9544</Phone>
-    <Address NearestAirport="Sky Harbor">
-      <Number>1413</Number>
-      <Street>W Rio Salado Pkwy</Street>
-      <City>Tempe</City>
-      <State>AZ</State>
-      <Zip>85281</Zip>
-    </Address>
-  </Hotel>
-
-  <!-- 7) Hampton Inn & Suites Tempe/Phoenix Airport -->
   <Hotel Rating="4.5">
-    <Name>Hampton Inn &amp; Suites Tempe/Phoenix Airport</Name>
-    <Phone>480-410-6400</Phone>
-    <Address NearestAirport="Sky Harbor">
-      <Number>1550</Number>
-      <Street>S 52nd St</Street>
-      <City>Tempe</City>
-      <State>AZ</State>
-      <Zip>85281</Zip>
-    </Address>
-  </Hotel>
-
-  <!-- 8) Canopy by Hilton Tempe Downtown -->
-  <Hotel>
     <Name>Canopy by Hilton Tempe Downtown</Name>
     <Phone>480-968-6800</Phone>
     <Address NearestAirport="Sky Harbor">
@@ -107,29 +74,51 @@
     </Address>
   </Hotel>
 
-  <!-- 9) Aloft Tempe -->
-  <Hotel>
-    <Name>Aloft Tempe</Name>
-    <Phone>480-621-3300</Phone>
+  <Hotel Rating="4.0">
+    <Name>Crowne Plaza Phoenix Airport</Name>
+    <Phone>602-273-7778</Phone>
     <Address NearestAirport="Sky Harbor">
-      <Number>951</Number>
-      <Street>E Playa Del Norte Dr</Street>
-      <City>Tempe</City>
+      <Number>4300</Number>
+      <Street>E Washington St</Street>
+      <City>Phoenix</City>
       <State>AZ</State>
-      <Zip>85288</Zip>
+      <Zip>85034</Zip>
     </Address>
   </Hotel>
 
-  <!-- 10) Omni Tempe Hotel at ASU -->
   <Hotel Rating="4.6">
-    <Name>Omni Tempe Hotel at ASU</Name>
-    <Phone>602-794-8600</Phone>
+    <Name>JW Marriott Phoenix Desert Ridge Resort And Spa</Name>
+    <Phone>480-293-5000</Phone>
     <Address NearestAirport="Sky Harbor">
-      <Number>7</Number>
-      <Street>E University Dr</Street>
-      <City>Tempe</City>
+      <Number>5350</Number>
+      <Street>E Marriott Dr</Street>
+      <City>Phoenix</City>
       <State>AZ</State>
-      <Zip>85281</Zip>
+      <Zip>85054</Zip>
+    </Address>
+  </Hotel>
+
+  <Hotel Rating="4.2">
+    <Name>Best Western North Phoenix Hotel</Name>
+    <Phone>602-395-0900</Phone>
+    <Address NearestAirport="Sky Harbor">
+      <Number>9455</Number>
+      <Street>N Black Canyon Hwy</Street>
+      <City>Phoenix</City>
+      <State>AZ</State>
+      <Zip>85021</Zip>
+    </Address>
+  </Hotel>
+
+  <Hotel Rating="4.3">
+    <Name>Hilton Phoenix Tapatio Cliffs Resort</Name>
+    <Phone>602-866-7500</Phone>
+    <Address NearestAirport="Sky Harbor">
+      <Number>11111</Number>
+      <Street>N 7th St</Street>
+      <City>Phoenix</City>
+      <State>AZ</State>
+      <Zip>85020</Zip>
     </Address>
   </Hotel>
 
