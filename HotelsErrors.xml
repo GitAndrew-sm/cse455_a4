@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<!-- INTENTIONALLY BROKEN for Q1.3  -->
+<!-- (1) Wrong root element name: should be <Hotels>, we use <Hotel> -->
 <Hotel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:noNamespaceSchemaLocation="Hotels.xsd">
 
-  <!-- 1) Westin: ok structure -->
+  <!-- OK base example to start -->
   <Hotel Rating="4.2">
     <Name>The Westin Tempe</Name>
     <Phone>480-968-8885</Phone>
@@ -16,7 +18,7 @@
     </Address>
   </Hotel>
 
-  <!-- 2) Residence Inn: REQUIRED attribute missing (NearestAirport removed) -->
+  <!-- (2) Required attribute missing: Address has NO NearestAirport -->
   <Hotel Rating="4.4">
     <Name>Residence Inn Tempe Downtown/University</Name>
     <Phone>480-967-2300</Phone>
@@ -29,7 +31,7 @@
     </Address>
   </Hotel>
 
-  <!-- 3) Courtyard: Phone element missing entirely -->
+  <!-- (3) Phone element missing entirely -->
   <Hotel>
     <Name>Courtyard by Marriott Tempe Downtown</Name>
     <Address NearestAirport="Sky Harbor">
@@ -41,7 +43,7 @@
     </Address>
   </Hotel>
 
-  <!-- 4) Hyatt Place: ADDRESS NO CLOSING TAG  -->
+  <!-- (4) An Address element has NO closing tag (malformed XML on purpose) -->
   <Hotel>
     <Name>Hyatt Place Tempe/Phoenix Airport</Name>
     <Phone>480-804-9544</Phone>
@@ -53,7 +55,7 @@
       <Zip>85281</Zip>
   </Hotel>
 
-  <!-- 5) Canopy: two Name elements -->
+  <!-- (5) Two Name elements for one hotel -->
   <Hotel>
     <Name>Canopy by Hilton Tempe Downtown</Name>
     <Name>Canopy by Hilton Tempe Downtown</Name>
