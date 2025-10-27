@@ -2,7 +2,7 @@
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
            elementFormDefault="unqualified" attributeFormDefault="unqualified">
 
-  <!-- Root: Hotels contains 1..∞ Hotel -->
+  <!-- Root: Hotels contains 1.. or more Hotel -->
   <xs:element name="Hotels">
     <xs:complexType>
       <xs:sequence>
@@ -38,3 +38,4 @@
   </xs:element>
 
 </xs:schema>
+
