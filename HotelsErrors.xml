@@ -1,14 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- INTENTIONALLY BROKEN (five injected errors) -->
 
-<!-- INTENTIONALLY BROKEN for Q1.3  -->
-<!-- (1) Wrong root element name: should be <Hotels>, we use <Hotel> -->
-<Hotel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:noNamespaceSchemaLocation="Hotels.xsd">
+<!-- (1) Wrong root element name (should be <Hotels>) -->
+<Hotel>
 
-  <!-- OK base example to start -->
-  <Hotel Rating="4.2">
-    <Name>The Westin Tempe</Name>
+  <!-- Hotel 1: OK baseline -->
+  <Hotel Rating="4.3">
     <Phone>480-968-8885</Phone>
+    <Name>The Westin Tempe</Name>
     <Address NearestAirport="Sky Harbor">
       <Number>11</Number>
       <Street>E 7th St</Street>
@@ -18,54 +17,54 @@
     </Address>
   </Hotel>
 
-  <!-- (2) Required attribute missing: Address has NO NearestAirport -->
-  <Hotel Rating="4.4">
-    <Name>Residence Inn Tempe Downtown/University</Name>
-    <Phone>480-967-2300</Phone>
+  <!-- Hotel 2: (2) required attribute missing (NearestAirport) -->
+  <Hotel Rating="4.6">
+    <Phone>480-293-5000</Phone>
+    <Name>JW Marriott Phoenix Desert Ridge Resort And Spa</Name>
     <Address>
-      <Number>510</Number>
-      <Street>S Forest Ave</Street>
+      <Number>5350</Number>
+      <Street>E Marriott Drive</Street>
+      <City>Phoenix</City>
+      <State>AZ</State>
+      <Zip>85054</Zip>
+    </Address>
+  </Hotel>
+
+  <!-- Hotel 3: (3) missing Phone element entirely -->
+  <Hotel Rating="4.4">
+    <Name>AC Hotel Phoenix Tempe/Downtown</Name>
+    <Address NearestAirport="Sky Harbor">
+      <Number>100</Number>
+      <Street>E Rio Salado Parkway</Street>
       <City>Tempe</City>
       <State>AZ</State>
       <Zip>85281</Zip>
     </Address>
   </Hotel>
 
-  <!-- (3) Phone element missing entirely -->
-  <Hotel>
-    <Name>Courtyard by Marriott Tempe Downtown</Name>
+  <!-- Hotel 4: (4) Address has NO closing tag (malformed on purpose) -->
+  <Hotel Rating="4.0">
+    <Phone>602-273-7778</Phone>
+    <Name>Crowne Plaza Phoenix Airport</Name>
     <Address NearestAirport="Sky Harbor">
-      <Number>601</Number>
-      <Street>S Ash Ave</Street>
-      <City>Tempe</City>
+      <Number>4300</Number>
+      <Street>E Washington St</Street>
+      <City>Phoenix</City>
       <State>AZ</State>
-      <Zip>85281</Zip>
-    </Address>
+      <Zip>85034</Zip>
   </Hotel>
 
-  <!-- (4) An Address element has NO closing tag (malformed XML on purpose) -->
-  <Hotel>
-    <Name>Hyatt Place Tempe/Phoenix Airport</Name>
-    <Phone>480-804-9544</Phone>
+  <!-- Hotel 5: (5) two Name elements -->
+  <Hotel Rating="4.2">
+    <Phone>602-395-0900</Phone>
+    <Name>Best Western North Phoenix Hotel</Name>
+    <Name>Hilton Phoenix Tapatio Cliffs Resort</Name>
     <Address NearestAirport="Sky Harbor">
-      <Number>1413</Number>
-      <Street>W Rio Salado Pkwy</Street>
-      <City>Tempe</City>
+      <Number>9455</Number>
+      <Street>N Black Canyon Hwy</Street>
+      <City>Phoenix</City>
       <State>AZ</State>
-      <Zip>85281</Zip>
-  </Hotel>
-
-  <!-- (5) Two Name elements for one hotel -->
-  <Hotel>
-    <Name>Canopy by Hilton Tempe Downtown</Name>
-    <Name>Canopy by Hilton Tempe Downtown</Name>
-    <Phone>480-968-6800</Phone>
-    <Address NearestAirport="Sky Harbor">
-      <Number>108</Number>
-      <Street>E University Dr</Street>
-      <City>Tempe</City>
-      <State>AZ</State>
-      <Zip>85281</Zip>
+      <Zip>85021</Zip>
     </Address>
   </Hotel>
 
